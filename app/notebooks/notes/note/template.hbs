@@ -1,1 +1,6 @@
-{{outlet}}
+{{!-- include data in the component inside handlebars --}}
+{{!-- this close="close" points to the route from the value of the send action in component --}}
+{{#edit-note note=model close="close"}} 
+  Notebook: {{model.notebook.title}} 
+  {{!-- render this data in the component at the yield inside a block element--}}
+  {{/edit-note}}
